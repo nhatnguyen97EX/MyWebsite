@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html style="width: 100%; height: 100%;">
+	<!--<![endif]-->
+	<head>
+		<meta https-equiv="Content-Type" content="text/html; charset=UTF-8">
+         <link rel="SHORTCUT ICON" href="images/user-1.jpg">
+        <title>Labs - Minh Nhật</title>
+        <meta name="description" content="Description of your Site">
+        <meta name="author" content="CREATEBRILLIANCE - Media &amp; Consulting">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="main/bootstrap.min.css">
+		
+        <link rel="stylesheet" href="main/main.css">
+		
+		<script src="main/modernizr-2.6.2-respond-1.1.0.min.js.tai xuong"></script>
+
+		<script src="main/js"></script>
+		
+		<script type="text/javascript" charset="UTF-8" src="main/common.js.tai xuong"></script>
+		
+	</head>
+    
+    <body style="width: 100%; height: 100%; margin: 10px; overflow: visible;">
+		
+		
+		<!--<nav class="navbar navbar-custom navbar-fixed-top static-background" role="navigation">-->
+		<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+			<div class="container">	
+				<div class="navbar-header page-scroll">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+						<i class="fa fa-bars"></i>
+					</button>
+					<div class="company">
+						<div class="border">Nguyen Doan Minh Nhat</div>
+					</div>
+				</div>
+				<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+					<ul class="nav navbar-nav">				
+						<li><a href="index.html"><h2>Home</h2></a></li>
+						<li><a href="lab1.html"><h2>Labs</h2></a></li>
+						<li><a href="about.html"><h2>About</h2></a></li>
+						<li><a href="contact.html"><h2>Contact</h2></a></li>						
+					</ul>
+				</div>				
+			</div>			
+		</nav>
+
+		<!--main body-->
+		<table >
+		<td style="width:8%"></td>
+		<td  style="width:1500px">
+			<div>
+			<section id="labs">
+				<div class="row">
+					<div class="hero col-sm-6 col-sm-offset-3">
+						<h3>Labs</h3>
+						<div class="space"></div>
+					</div>
+				</div>	
+				<div class="tabCenter">
+				
+					<button class="tablinksbt"><a href="lab1.html"><h4>Lab1</h4></a></button>
+					<button class="tablinksbt"><a href="lab2.html"><h4>Lab2</h4></a></button>
+					<button class="tablinksbt"><a href="lab3.html"><h4>Lab3</h4></a></button>
+					<button class="tablinksbt active"><a href="lab4.html"><h4>Lab4</h4></a></button>
+					<button class="tablinksbt"><a href="lab5.html"><h4>Lab5</h4></a></button>
+				</div>
+
+				<div class="tabcontentbt">
+					<div class="tabCenter">
+						<button class="tablinks1 active" name="Requirement1">Requirement</button>
+						<button class="tablinks1" name="Design1">Design</button>
+						<button><a href="lab4_index.html" target="_blank">Implement</a></button>
+					</div>
+
+					<div id="Requirement1" class="tabcontent1">
+						<p>Requirement:</p>
+					</div>
+
+					<div id="Design1" class="tabcontent1">
+						<p>Design lab4</p>
+					</div>
+
+					
+
+					<script type="text/javascript">
+						var buttons1 = document.getElementsByClassName('tablinks1');
+						var contents1 = document.getElementsByClassName('tabcontent1');
+						function showContent1(id) {
+							for (var i = 0; i < contents1.length; i++) {
+								contents1[i].style.display = 'none';
+							}
+							var content1 = document.getElementById(id);
+							content1.style.display = 'block';
+						}
+						for (var i = 0; i < buttons1.length; i++) {
+							buttons1[i].addEventListener("click", function() {
+								var id = this.name;
+								for (var i = 0; i < buttons1.length; i++) {
+									buttons1[i].classList.remove("active");
+								}
+								this.className += " active";
+								showContent1(id);
+							});
+						}
+						showContent1('Requirement1');
+					</script>
+				</div>
+			</section>
+			</div>
+		</td>
+		<td  style="width:8%"></td>
+		</table>
+
+			<script type="text/javascript" src="main/jquery-1.10.1.min.js.tai xuong"></script>
+			<script type="text/javascript" src="main/bootstrap.min.js.tai xuong"></script>
+			<script type="text/javascript" src="main/plugins.js.tai xuong"></script>
+			<script type="text/javascript" src="main/owl.carousel.min.js.tai xuong"></script>
+			<script type="text/javascript" src="main/main.js.tai xuong"></script>
+
+			<script>
+				$(document).ready(function(){														
+					SLAMR.nav();																																																							
+				});
+			</script>
+	</body>
+	<!--footer-->
+	<footer>
+	<div class="container text-center">
+		<div class="row">
+			<div class="col-md-12">
+				<p class="copy">
+					© <strong>NhatNguyen97EX</strong> 2019
+				</p>
+			</div>
+		</div>
+	</div>
+	</footer>
+</html>
