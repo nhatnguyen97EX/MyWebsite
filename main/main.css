@@ -249,8 +249,8 @@ overflow: hidden;
 }
 .top-nav-collapse .company .border{
 	opacity: 10;
-	border:3px solid blue;
-	color: blue;
+	border:3px solid  #3b5998;
+	color: #3b5998;
 }
 .top-nav-collapse .navbar-nav > li > a,
 .top-nav-collapse .navbar-nav .dropdown-menu > li > a {
