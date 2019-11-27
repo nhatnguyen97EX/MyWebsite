@@ -39,6 +39,7 @@
 					<ul class="nav navbar-nav">				
 						<li><a href="index.html"><h2>Home</h2></a></li>
 						<li><a href="lab1.html"><h2>Labs</h2></a></li>
+						<li><a href="result.html"><h2>Result</h2></a></li>
 						<li><a href="about.html"><h2>About</h2></a></li>
 						<li><a href="contact.html"><h2>Contact</h2></a></li>						
 					</ul>
@@ -47,80 +48,46 @@
 		</nav>
 
 		<!--main body-->
-		<table >
-		<td style="width:8%"></td>
-		<td  style="width:1500px">
-			<div>
+		<table width="100%">
+			<td  width="8%"></td>
+			<td   width="84%">
 			<section id="labs">
 				<div class="row">
 					<div class="hero col-sm-6 col-sm-offset-3">
-						<h3>Labs</h3>
+						<h3>Result</h3>
 						<div class="space"></div>
 					</div>
 				</div>	
-				<div class="tabCenter">
+				<div class="alignCenter"><h5><b>THÀNH QUẢ ĐẠT ĐƯỢC</b></h5></div>
+					<table border="3" width="60%" class="tableCenter">
+						<tbody>
+							<tr bgcolor="#3b5998">
+								<td width="10%" class="alignCenter">STT</td>
+								<td width="70%" class="alignCenter">Nội dung</td>
+								<td width="20%" class="alignCenter">Đường dẫn</td>
+							</tr>
+							<tr bgcolor="#3b7998">
+								<td class="alignCenter">1</td>
+								<td>Thiết kế và tạo trang sản phẩm dành cho nam</td>
+								<td class="alignCenter"><a href="https://hci2019group02.github.io/TNL_Shoes_Project/men.html"  target="_blank">link</a></td>
+							</tr>
+							<tr bgcolor="#3b7998">
+								<td class="alignCenter">2</td>
+								<td>Thiết kế và tạo trang chi tiết sản phẩm</td>
+								<td class="alignCenter"><a href="https://hci2019group02.github.io/TNL_Shoes_Project/product-detail.html"  target="_blank">link</a></td>
+							</tr>
+							<tr bgcolor="#3b7998">
+								<td class="alignCenter">3</td>
+								<td>Thiết kế và tạo trang giỏ hàng</td>
+								<td class="alignCenter"><a href="https://hci2019group02.github.io/TNL_Shoes_Project/cart.html"  target="_blank">link</a></td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="alignCenter"><h5><b>Tự đánh giá:</b> đạt 20% trong tổng số 100% của bài tập nhóm</h5></div>
 				
-					<button class="tablinksbt"><a href="lab1.html"><h4>Lab1</h4></a></button>
-					<button class="tablinksbt"><a href="lab2.html"><h4>Lab2</h4></a></button>
-					<button class="tablinksbt"><a href="lab3.html"><h4>Lab3</h4></a></button>
-					<button class="tablinksbt"><a href="lab4.html"><h4>Lab4</h4></a></button>
-					<button class="tablinksbt active"><a href="result.html"><h4>Lab5</h4></a></button>
-				</div>
-
-				<div class="tabcontentbt">
-					<div class="tabCenter">
-						<button class="tablinks1 active" name="Requirement1">Requirement</button>
-						<button class="tablinks1" name="Design1">Design</button>
-						<button class="tablinks1" name="Implement1">Implement</button>
-					</div>
-
-					<div id="Requirement1" class="tabcontent1">
-						<p>Requirement</p>
-						<p>1. Tạo một trang Result trên đó liệt kê những gì mình đã
-						làm/học được trong suốt quá trình làm bài tập nhóm. Dẫn
-						link tới từng trang do SV đã làm.</p>
-						<p>2. Tự đánh giá mình được bao nhiêu % trong tổng số 100%
-						của bài tập nhóm. </p>
-					</div>
-
-					<div id="Design1" class="tabcontent1">
-						<p>Design lab5</p>
-					</div>
-					<div id="Implement1" class="tabcontent1">
-						<div class="alignCenter"><h5><b>THÀNH QUẢ ĐẠT ĐƯỢC</b><h5></div>
-						<
-						<a href="#">1. Tạo trang sản phẩm nam</a>
-					</div>
-					
-					
-
-					<script type="text/javascript">
-						var buttons1 = document.getElementsByClassName('tablinks1');
-						var contents1 = document.getElementsByClassName('tabcontent1');
-						function showContent1(id) {
-							for (var i = 0; i < contents1.length; i++) {
-								contents1[i].style.display = 'none';
-							}
-							var content1 = document.getElementById(id);
-							content1.style.display = 'block';
-						}
-						for (var i = 0; i < buttons1.length; i++) {
-							buttons1[i].addEventListener("click", function() {
-								var id = this.name;
-								for (var i = 0; i < buttons1.length; i++) {
-									buttons1[i].classList.remove("active");
-								}
-								this.className += " active";
-								showContent1(id);
-							});
-						}
-						showContent1('Requirement1');
-					</script>
-				</div>
 			</section>
-			</div>
-		</td>
-		<td  style="width:8%"></td>
+			</td>
+			<td   width="8%"></td>
 		</table>
 
 			<script type="text/javascript" src="main/jquery-1.10.1.min.js.tai xuong"></script>
