@@ -58,7 +58,44 @@
 						<div class="space"></div>
 					</div>
 				</div>	
-				<div class="alignCenter"><h5><b>THÀNH QUẢ ĐẠT ĐƯỢC</b></h5></div>
+				<div class="tabCenterResult">
+						<button class="tablinks active" name="kienThucHocDuoc">KIẾN THỨC HỌC ĐƯỢC</button>
+						<button class="tablinks" name="thanhQuaDatDuoc">THÀNH QUẢ ĐẠT ĐƯỢC</button>
+				</div>
+				<div id="kienThucHocDuoc" class="tabcontent">
+					<div class="col-12 p-4">                       
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <h3 class="mb-20">1. Khả năng thiết kế giao diện:</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="unordered">
+                                <ul class="angle angle-right">
+                                    <li>Biết áp dụng các lí thuyết học được trên lớp vào thiết kế giao diện một trang web.</li>
+                                    <li>Tạo ra được một trang web với giao diện gần gũi, dễ sử dụng.</li>
+                                    <li>Đảm bảo được các nguyên tắc về bố cục, màu sắc,...khi thiết kế một trang web.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <h3 class="mb-20 mt-15">2. Khả năng làm việc nhóm:</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="unordered">
+                                <ul class="angle angle-right">
+                                    <li>Biết lắng nghe ý kiến của giảng viên và từng thành viên trong nhóm để vận dụng
+										vào trang web, hỗ trợ nhau hết mình trong quá trình làm việc.									
+                                    </li>                   
+                                    <li>Phân chia công việc rõ ràng cho từng thành viên.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+				<div id="thanhQuaDatDuoc" class="tabcontent">
 					<table border="3" width="60%" class="tableCenter">
 						<tbody>
 							<tr bgcolor="#3b5998">
@@ -83,8 +120,30 @@
 							</tr>
 						</tbody>
 					</table>
-					<div class="alignCenter"><h5><b>Tự đánh giá:</b> đạt 20% trong tổng số 100% của bài tập nhóm</h5></div>
-				
+					<div class="alignCenter"><h5><b>Tự đánh giá:</b> đạt 20% trong tổng số 100% của bài tập nhóm</h5></div>	
+				</div>
+				<script type="text/javascript">
+								var buttons = document.getElementsByClassName('tablinks');
+								var contents = document.getElementsByClassName('tabcontent');
+								function showContent(id) {
+									for (var i = 0; i < contents.length; i++) {
+										contents[i].style.display = 'none';
+									}
+									var content = document.getElementById(id);
+									content.style.display = 'block';
+								}
+								for (var i = 0; i < buttons.length; i++) {
+									buttons[i].addEventListener("click", function() {
+										var id = this.name
+										for (var i = 0; i < buttons.length; i++) {
+											buttons[i].classList.remove("active");
+										}
+										this.className += " active";
+										showContent(id);
+									});
+								}
+								showContent('kienThucHocDuoc');
+							</script>
 			</section>
 			</td>
 			<td   width="8%"></td>
