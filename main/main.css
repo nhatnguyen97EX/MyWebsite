@@ -203,24 +203,69 @@ a:focus {
     outline: 0;
 }
 
-/* Style the tabCenter */
+/* Style the tabCenterLab */
 .tabCenter {	
 overflow: hidden;
 text-align: center;
 }
 
-/* Style the buttons inside the tabCenter */
+
+/* Style the buttons inside the tabCenterLab */
 .tabCenter button {
 	background-color: inherit;
 	float: center;
-	border: 1px solid black;
 	outline: none;
+	width: 120px;
 	cursor: pointer;
 	transition: 0.3s;
 }
 
 /* Create an active/current tablink class */
 .tabCenter button.active{
+	background-color: #ccc;
+	}
+
+/* Style the tabCenterLab */
+.tabCenterLab {	
+overflow: hidden;
+text-align: center;
+}
+
+
+/* Style the buttons inside the tabCenterLab */
+.tabCenterLab button {
+	background-color: inherit;
+	float: center;
+	outline: none;
+	width: 70px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+/* Create an active/current tablink class */
+.tabCenterLab button.active{
+	background-color: #ccc;
+	}	
+
+/* Style the tabCenterResult */
+.tabCenterResult {	
+overflow: hidden;
+text-align: center;
+}
+
+
+/* Style the buttons inside the tabCenterResult */
+.tabCenterResult button {
+	background-color: inherit;
+	float: center;
+	outline: none;
+	width: 200px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+/* Create an active/current tablink class */
+.tabCenterResult button.active{
 	background-color: #ccc;
 	}		
 
