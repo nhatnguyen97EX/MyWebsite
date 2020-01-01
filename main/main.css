@@ -176,7 +176,10 @@ a:focus {
     left:0;
 }
 
-
+.navbar-nav button.active{
+	background-color: #ccc;
+	}	
+	
 .navbar-custom .nav li a {
     -webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
@@ -287,7 +290,9 @@ overflow: hidden;
 /* Create an active/current tablink class */
 .tab button.active{
 	background-color: #ccc;
-	}			
+	}		
+
+
 
 /*small version */
 .top-nav-collapse{
